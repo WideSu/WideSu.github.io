@@ -11,32 +11,33 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Computer Science, Huaqiao University, China, 2017-2021
+* M.S. in IT in Business, Singapore Management University, Singapore, 2021-2022
+* Ph.D in AI for healthcare, XXX University, 2023 (expected)
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
+* Winter 2019: Research Assistant
+  * Huaqiao University
   * Duties included: Tagging issues
   * Supervisor: Professor Git
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Dec 2021-Jun 2022: Machine Learning Engineer Intern
+  * IKAS industry
+  * Duties included: Build data science pipeline, conduct experient, report insights to teams
+  * Supervisor: [Docter Liu(CTO of IKAS)](https://www.linkedin.com/in/bin-liu-phd-pmp-aa338760/?originalSubdomain=sg)
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
+* R, Python to do data ETL
+* Data visualisation
+  * [Tableau](https://public.tableau.com/app/profile/huang.anni/)
   * Sub-skill 2.2
   * Sub-skill 2.3
-* Skill 3
+* Build deep learning models using PyTorch
+  * Code repo: [Session based recommendation](https://github.com/AmazingDD/serenRec/tree/dev/seren/model)
 
-Publications
+<!-- Publications
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
@@ -48,12 +49,6 @@ Talks
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
   
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
