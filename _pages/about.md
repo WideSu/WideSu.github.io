@@ -14,5 +14,5 @@ Hi! I’m HUANG Anni, a student at the Singapore Management University in the Sc
 Recent work
 ======
 
-I am working on speech enhancement recently.
-Check out my [blog](https://widesu.github.io/posts/2022/06/blog-post-1/) for papers in this area.
+I am working on speech enhancement and reinforcement learning recently.
+Check out my [blog]([https://widesu.github.io/posts/2022/06/blog-post-1/](https://widesu.github.io/year-archive/)).
