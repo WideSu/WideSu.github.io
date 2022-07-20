@@ -1,6 +1,6 @@
 ---
 title: "Project 2-ERP system (SpringMVC+Bootstrap)"
-excerpt: "Java EE Web<br/><img src='/images/500x300.png'>"
+excerpt: "Java EE Web<br/><img src='/images/proj2.png'>"
 collection: projects
 ---
 
