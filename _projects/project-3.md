@@ -1,6 +1,6 @@
 ---
 title: "Project 3-Airline delay prediction on Google Cloud Platform"
-excerpt: "Java EE Web<br/><img src='/images/proj2.png'>"
+excerpt: "MLops on GCP<br/><img src='/images/proj3.png'>"
 collection: projects
 ---
 
