@@ -4,162 +4,122 @@ excerpt: "MLops on GCP<br/><img src='/images/proj3.png'>"
 collection: projects
 ---
 
+## Project Objective
 
-This is a research project I did with my Prof Li Haibo when I was a sophomore, specifically, a mechanical vibration signal analysis system, sponsored by the key projects of Quanzhou city's science and technology program.
+Build a machine learning pipeline for CI/CD.
 
-# Tech stack
-- Maven
-- Spring（IOC DI AOP Declarative transaction processing）
-- SpringMVC（Restful API）
-- Hibernate Validate（Parameter verification）
-- Mybatis（Minimum configuration scheme）
-- Druid（Data source configuration SQL | anti injection SQL | performance monitoring)
-- Unified exception handling
-- JSP JSTL JavaScript
-- shiro Authority control
-- Bootstrap
+### Airline delay
+
+As more countries come out of COVID lockdowns, travelling is expected to pick up. The global market size of the industry was 471.8 billion U.S. dollars in 2021. Countries are optimistic that the travel industry will reach pre-pandemic levels.  And it is estimated to increase by 4.5% in the coming year. Respondents of a late 2020 survey expressed that newly implemented measures have improved confidence during travel. It is believed that relaxation of travel restrictions will continue post-COVID era, combined with lower travel costs and a relative return to normalcy, will contribute to higher passenger numbers in the years to come. 
+
+![image](https://user-images.githubusercontent.com/44923423/180154835-f37939df-fa35-4176-8666-48f5d42d0c9b.png)
+
+While the airline industry has covered much from COVID, it is inevitable that flights will be subjected to disruption, resulting in delays and cancellations. Our project aims to model the arrival delay of airline flights to help passengers make their schedule more predictable. We ingested year 2015 records on-time performance dataset to predict the delay of an airline.
 
 
-## System structure
+### Project statement
+While the airline industry has covered much from COVID, it is inevitable that flights will be subjected to disruption, resulting in delays and cancellations. Our project aims to model the arrival delay of airline flights to help passengers make their schedule more predictable. We ingested year 2015 records on-time performance dataset to predict the delay of an airline.
 
-![image](https://user-images.githubusercontent.com/44923423/179386879-0af486cd-341b-4462-addd-fdb3d012bad9.png)
 
-## Database Design
-![image](https://user-images.githubusercontent.com/44923423/179386887-adf46196-62c2-44e4-bca2-732a390727ec.png)
+## Dataset overview
 
-## User Guide
-### Login Interface
+Our dataset is from Bauru of Transportation Statistics (BTS), which has 107 columns. After reading the descriptions of the fields, we find that there are a few fields that appear relevant to the problem of training, predicting, or evaluating flight arrival delay. Table 1 presents the fields shortlisted by the team.
 
-To log in, you can use the account number: 22 and the password: 22 to log in as a super administrator. If you enter the wrong password, you will need to enter the verification code next time you log in.
+![image](https://user-images.githubusercontent.com/44923423/180155549-ab580e1f-35f7-43e4-a4f2-67dcc8e698ff.png)
 
-![image](https://user-images.githubusercontent.com/44923423/179386911-6d30b6d7-eb1f-4a6c-8859-d88da6268a5e.png)
+### EDA
 
-### Main Menu
+Before feature engineering, we firstly did some EDA to have a general understanding of our dataset. In order to get a sense of departure delay for each airline, we draw a bee colony diagram as shown in Fig 2. The figure makes a census of all the delays that were measured in January 2015. This representation gives a feeling on the dispersion of data and put in perspective the relative homogeneity that appeared in the second pie chart. Indeed, we see that mean delays are around 10 minutes, this low value is a consequence of the fact that most flights take off on time. However, we occasionally face large delays reaching over 10+ hours.
 
-The super administrator can display the system management module to assign and manage system permissions, and other roles can view the information of the remaining modules except system management (including downloading attachments, viewing pictures, etc.), but can only maintain the information within the corresponding permissions of the role. The function search bar on the left can be used for function fuzzy search.
+Fig 2: Departure delay for each airline 
+![image](https://user-images.githubusercontent.com/44923423/180155723-31c7a24f-b9ca-43e2-a4f9-a06cba44e11e.png)
 
-![image](https://user-images.githubusercontent.com/44923423/179386992-4c2167b2-b08d-4315-9c65-adc7d92288ce.png)
+In addition, we are curious about whether the delay is due to departure or landing. A stacked bar chart (Fig 3) shows the blue bar for departure delay and the bar with hatch lines for arrival delay. We can see that delays at arrival are generally lower than at departure. This indicates that flights typically adjust their flight speed in order to reduce the delays at arrival.
 
-The super administrator can display the system management module to assign and manage system permissions, and other roles can view the information of the remaining modules except system management (including downloading attachments, viewing pictures, etc.), but can only maintain the information within the corresponding permissions of the role. The function search bar on the left can be used for function fuzzy search.
+Fig 3: Mean delay during departure vs arrival for each airline 
+![image](https://user-images.githubusercontent.com/44923423/180156246-2ae68ad8-2e28-4af2-b256-950284cbd5dc.png)
 
-### Upload images
+### Proposed pipeline
 
-For the configuration of image upload, please refer to the notes at the end of the document. The size of the image must not exceed 1M, and images in various formats such as jpg and png are supported. After the upload is successful, it can be displayed in the corresponding display column.
-![image](https://user-images.githubusercontent.com/44923423/179387013-af1f9f1a-d7bf-4708-a99e-22562b619c53.png)
+Our pipeline consists of four parts: creating tabular dataset, AutoML training, model evaluation and validation, and model deployment as shown in Fig 4. The component definition specifies a base image for the component to use and specifies that the google-cloud-ai platform package should be installed. The custom pipeline component retrieves the regression model evaluation generated by the AutoML tabular training process, parses the evaluation data, and renders the RMSE and MAE for the model. It also uses given metrics threshold information and compares that to the evaluation results to determine whether the model is sufficiently accurate for deploy.
 
-### Upload files
+Fig 4: Pipeline overview
+![image](https://user-images.githubusercontent.com/44923423/180156507-d38df66d-6f18-4530-ac54-926e18a6915d.png)
 
-The file upload uses an open source jQuery file upload plug-in. You can modify the parameters of the uploaded file in common.js, including the number of uploads, the supported file types, etc. The configuration information is as follows:
+#### Data Ingestion
+For data ingestion, we firstly gathered data from BTS website, then did feature engineering including deleting the columns with too many missing values and change them into proper data types. This is followed by selection of important features. Finally, the csv files are ingested into into BigQuery so we can build the AutoML dataset by querying data from BigQuery, as shown in Fig 5.
 
-```{java}
-url:"file/upload", 
-maxFileCount: 5, //上传文件个数（多个时修改此处 
-returnType: 'json', //服务返回数据 
-allowedTypes: 'doc,docx,excel,sql,txt,ppt,pdf', //允许上传的文件式 
-showDone: false, //是否显示"Done"(完成)按钮 
-showDelete: true, //是否显示"Delete"(删除)按钮
-```
-![image](https://user-images.githubusercontent.com/44923423/179387111-140e17eb-a630-4fb4-8206-f3c16da0a625.png)
+Fig 5: Pipeline overview
+![image](https://user-images.githubusercontent.com/44923423/180156759-947db3b4-76d1-4767-a91a-9b18d97ba9ff.png)
 
-### Rich text editing
+### Model Training
+We used an AutoML tabular training component to train our model which is defined from google_cloud_pipeline_components as shown in Fig 6. AutoML Tables is a supervised learning service. This means that you train a machine learning model with example data. AutoML Tables uses tabular (structured) data to train a machine learning model to make predictions on new data. One column from your dataset, called the target, is what the model will learn to predict. Some numbers of the other data columns are inputs (called features) that the model will learn patterns from. You can use the same input features to build multiple models just by changing the target. From the email marketing example, this means you could build two models with the same input features: One model could predict a customer's persona (a categorical target), and one could predict their monthly spending (a numerical target).
 
-The system uses the open source `KindEditor` rich text editor, which is a set of online HTML editors, mainly used to allow users to obtain WYSIWYG editing effects on the website. KindEditor replaces the traditional multi-line text input box (textarea) with a visual rich text input box.
+Fig6: Model training section in the pipeline
+![image](https://user-images.githubusercontent.com/44923423/180156909-7675fcfa-f162-4c31-a9b8-44784d5c75dc.png)
 
-**KindEditor main features:**
+Below is an evaluation of the advantages and disadvantages of using AutoML based on the team’s experience of using GCP’s AutoML solution.
+Pros & Cons of AutoML vs Custom Training
+Pros
+- AutoML solutions can use only a small amount of data for training and still obtain good results. This is because most AutoML solutions can rely on transfer learning.
+- Good for problems which are generalisable to common problems.
+- No need to build a machine learning model from scratch
+- Big Tech AutoML vendors are more likely to incorporate state of art technology, reducing the burden of keep up with latest AI development.
+Cons
+- Not always applicable to niche use cases 
+- Architecture of model in AutoML is typically unknown. Hence lesser insights can be derived as compared to doing Machine Learning by hand.
+- High running cost/hosting expected when scaling up
 
-- Fast: small in size and fast to load 
-- Open source
-- Easy to customize: built-in custom DOM class library, precise operation of DOM 
-- Scalable: plug-in-based design, all functions are plug-ins, and functions can be increased or decreased according to needs 
-- Easy to change style: easy to modify the editor style, just modify one CSS file 
-- Compatible for major browsers: Support most major browsers, such as IE, Firefox, Safari, Chrome, Opera
+### Conditional deployment
+To avoid data shift and under-performance, we use conditional deployment (fFig 7) before deploying the model. To be specific, we will only deploy the model when the selected metrics are above a threshold. For the regression model and will use MAE and MSE as the thresholds to decide whether to use previous module or the new one.
+Fig7: Conditional Deployment in the pipeline
+![image](https://user-images.githubusercontent.com/44923423/180157216-ea0cfda2-a8e6-405d-a62c-a5b81843a9b6.png)
 
-![image](https://user-images.githubusercontent.com/44923423/179390335-ad090db6-4ce8-4595-91f0-62d85b8d647a.png)
+### CICD and Unit Test
 
-### Related information
+The motivation for CI/CD is fairly straightforward. If you’re a developer, version control—whether it’s git branches or another system—is your source of truth. At the same time, code for Cloud Functions has to be tested and then redeployed manually. This presents no shortage of potential issues.
+CI/CD systems automate this process, letting you automatically mirror any changes in version control to GCP deployments. CI/CD systems detect code changes using hooks in version control systems that are triggered whenever new code versions are received. These systems can also invoke language-specific command-line functions to run your tests, followed by a call to gcloud to automatically deploy any code changes to Cloud Functions.
+The CI/CD consists of following procedures:
+1)Preparation
+Enable resource manager, GKE, cloud source repositories, cloud build, container registry
+2)Creating GKE application
+3)Automating deployments for git branches
+4)Automating deployments for git main branch
+5)Automating deployments for git tags
+6)Clean up
 
-The information of the associated object, click to display in the form of a pop-up window, if you have the modification permission corresponding to the module, you can also maintain the information here.
+The CI/CD routine is defined in the pipeline-deployment.yaml file, and consists of the following steps:
+1)Clone the repository to the build environment
+2)Run unit tests.
+3)Run a local e2e test of the pipeline.
+4)Build the ML container image for pipeline steps.
+5)Compile the pipeline.
+6)Upload the pipeline to Cloud Storage.
 
-![image](https://user-images.githubusercontent.com/44923423/179390372-31fc5018-e856-4f24-aafb-d1d1fa7e043c.png)
+For unit tests, we tested three components, first is unit tests for data ingestion and validation. Second is model test which tests the model generated by AutoML. Third is model deployment test which tests the model uploaded by sending requests to the endpoint.
 
-### Search box
+### Cloud Services
+In our project, we use 3 cloud services, big query, cloud build, vertex AI. We use BigQuery to store the view of data, Cloud Build to get trigger from cloud commit auto-compile and build the docker image and push to the repository, and autoML to train a model and deploy it to end point.
 
-You can select query conditions in the search box in the upper right corner and enter keywords to perform fuzzy search of corresponding information.
+Fig8: Cloud Services we use in this project
+![image](https://user-images.githubusercontent.com/44923423/180157466-1ad596f5-14c3-4c23-9fb4-963e94108e64.png)
 
-![image](https://user-images.githubusercontent.com/44923423/179390389-705c591d-3294-4b30-94d2-769cbabde7ea.png)
+#### End Product
 
-### Session expired jump to login
+By using the endpoint of our trained model, we build a website application which enables user to key in their desired fly date and time and get to know the delay for each airline at this time as shown in Fig 8. For example, a tourist wants to fly from John F Kennedy International Airport in New York to San Francisco International Airport on July 2nd in the morning. He or she can select the specifics of the trip and use our model to predict its delay.
+Fig 9: Index of our website where users can select origin, destination, airline and datetime to predict its delay
+![image](https://user-images.githubusercontent.com/44923423/180157686-69b83865-7332-4e53-ad3f-6755f344309e.png)
 
-After the user logs in, the corresponding session will be established. The default expiration time of the system is 10 minutes. If you need to change it, you can change the following configuration in the applicationContextshiro.xml configuration file.
+After submitting, users can check the delay of historical delay for each airline and the predicted probability of delay by our model as shown in Fig 9. As we can see, the probability of delay is around 21%. And among all the airlines, Delta Airline has the least delay. Thus, the user can choose Delta Airline to avoid delay.
+![image](https://user-images.githubusercontent.com/44923423/180157825-6d180d34-45bb-4cf1-bad4-1fb1a5aaca6b.png)
 
-```{xml}
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- 会话管理器 -->
-<bean id="sessionManager" class="org.apache.shiro.web.session.mgt.D  efaultWebSessionManager">
-   <!-- session的失效时长，单位毫秒 ，这里设置为10分钟-->
-   <property name="globalSessionTimeout" value="600000" />
-   <!-- 删除失效的session -->
-   <property name="deleteInvalidSessions" value="true" />
-   <!-- 指定本系统sessionId, 默认为: JSESSIONID 问题: 与Servlet容器名冲 突, 如Jetty, Tomcat等默认JSESSIONID,
+## Challenges and future work
+Machine learning engineering is a tough task and not many resources on the Internet as machine learning does. When implementing the pipeline, we got many errors, and some errors are quite strange such like edge error, and we spend much time spend time debugging it.
+Hyperparameter tuning requires multiple runs of the training application within limits of chosen hyperparameters. Vertex AI uses Bayesian optimisation for hypermeter tuning. Vertex can keep track of the results of each trial and the most effective configuration can then be applied for prediction. In AutoML, the stages in yellow are managed automatically. 
 
-当跳出shiro Servlet时如Error-page容器会为JSESSIONID重新分配值导致 登录会话丢失! -->
-   <property name="sessionIdCookie" ref="sessionIdCookie" />
-</bean>
-```
+![image](https://user-images.githubusercontent.com/44923423/180158266-0daf2e82-ae40-4cec-ba9c-b04cf405ce0a.png)
 
-If the session expires, you should jump to the login interface to log in again. The method adopted by the system is to set a session filter, as follows:
-```{java}
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-public class RegexMatches {
-    public static void main(String args[]) {
-
-        // String to be scanned to find the pattern.
-        String line = "This order was placed for QT3000! OK?";
-        String pattern = "(.*)(\\d+)(.*)";
-
-        // Create a Pattern object
-        Pattern r = Pattern.compile(pattern);
-
-        // Now create matcher object.
-        Matcher m = r.matcher(line);
-        if (m.find()) {
-            System.out.println("Found value: " + m.group(0));
-            System.out.println("Found value: " + m.group(1));
-            System.out.println("Found value: " + m.group(2));
-        } else {
-            System.out.println("NO MATCH");
-        }
-    }
-}
-```
-And configure the filter in web.xml. When the session expires, set the session state to timeout in the response header, and then use the global ajax event to judge the session state and jump to the login page. The event is defined in common.js as follows:
-
-```{javascript}
-//全局ajax事件，处理session过期跳转登录
-$.ajaxSetup({
-    complete: function(XMLHttpRequest, sessionStatus) {
-        var sessionstatus = XMLHttpRequest.getResponseHeader("sessi on-status");
-
-        if (sessionstatus == "timeout") {
-            $.messager.alert('提示信息', "登录超时！请重新登录！", 'inf o', function() {
-                window.location.href = 'login';
-            });
-
-        }
-
-    }
-});
-```
-For details about this part, please refer a blog: Using filter and global ajax events to realize shiro session expired login jump
-
-### Dynamic permission control
-This system adopts the classic permission model, namely RBAC (RoleBased Access Control) role-based access control, that is, users associate with permissions through roles. The model uses five tables: user table, role table, permission table, user role table, role permission table. Simply put, a user has several roles, and each role has several permissions. In this way, an authorization model of "user role authority" is constructed. In this model, there is a many-to-many relationship between users and roles, and between roles and permissions.
-
-The model can be simplified as the following figure:
-![image](https://user-images.githubusercontent.com/44923423/179390664-738e0236-4286-4615-8816-aac452f0c272.png)
-
-This system is based on the RBAC permission model and uses the shiro framework for permission control. Only users with the role of super administrator can manage the system permissions, and the permission level is refined to menu options.
-
-![image](https://user-images.githubusercontent.com/44923423/179390677-1eedcb74-3b70-439d-8c58-d7fe9865d51d.png)
+Model monitoring
+- Training-serving skew occurs when feature distribution in production deviates from the training data.
+- Prediction drift occurs when feature distribution in production changes over time. This option is enabled when the original training data is not available. 
+In the project, since we have the training data, we could enable the training-serving skew monitoring.
