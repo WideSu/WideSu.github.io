@@ -71,10 +71,11 @@ The evaluation metrics is recall rate
 
 ## Step3: Conduct feature engineering for time-series data
 
-I tried different methods of feature selection
+I tried different methods of feature selection: statistic filtering methods, embedded methods, and wapper methods. They have pros and cons 
 <img width="917" alt="image" src="https://user-images.githubusercontent.com/44923423/179951005-e418cf62-e495-421b-b552-a1d869b1bc3d.png">
-
 reference: Chandrashekar, Girish, and Ferat Sahin. "A survey on feature selection methods." Computers & Electrical Engineering 40.1 (2014): 16-28.
+
+For statisitic filtering methods, such as
 
 Selected the five most important features.
 Union of 4 feature selection does not lead to significantly different results. 
@@ -98,56 +99,7 @@ def get_features(data, label, agg, features):
 ```
 ## Step3: Build regressor ML pipeline
 
-```{python}
-from sklearn.pipeline import Pipeline
-pipeline = Pipeline([
-    ('normalizer', StandardScaler()), #Step1 - normalize data
-    ('clf', LogisticRegression()) #step2 - classifier
-])
-#Seperate train and test data
-X_train, X_test, y_train, y_test = train_test_split(data.iloc[:,:-1].values,
-                                                   data['Species'],
-                                                   test_size = 0.4,
-                                                   random_state = 10)
-print(X_train.shape)
-print(X_test.shape)
-print(y_train.shape)
-print(y_test.shape)
-
-from sklearn.model_selection import cross_validate
-
-scores = cross_validate(pipeline, X_train, y_train)
-scores
-
-## Trying out the following classification algorithms¶
-from sklearn.svm import SVC
-from sklearn.linear_model import LogisticRegression
-
-from sklearn.linear_model import LogisticRegression
-from sklearn.svm import SVC
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
-
-clfs = []
-clfs.append(LogisticRegression())
-clfs.append(SVC())
-clfs.append(SVC())
-clfs.append(KNeighborsClassifier(n_neighbors=3))
-clfs.append(DecisionTreeClassifier())
-clfs.append(RandomForestClassifier())
-clfs.append(GradientBoostingClassifier())
-
-for classifier in clfs:
-    pipeline.set_params(clf = classifier)
-    scores = cross_validate(pipeline, X_train, y_train)
-    print('---------------------------------')
-    print(str(classifier))
-    print('-----------------------------------')
-    for key, values in scores.items():
-            print(key,' mean ', values.mean())
-            print(key,' std ', values.std())
-```
+Changed 
 
 ## Step5: Justify selection of models
 ## Step6: Deploy the model on MLflow
