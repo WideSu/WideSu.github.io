@@ -71,6 +71,7 @@ The evaluation metrics is recall rate since the company wants to detect every al
 ## Step3: Conduct feature engineering for time-series data
 
 Feature selection methods are classiﬁed into three major categories: ﬁlter methods (are independent of learning models), wrapper methods (rely on learning models for selection criteria), and embedded methods (embed feature selection into learning models to achieve model fitting simultaneously).
+
 <img width="392" alt="image" src="https://user-images.githubusercontent.com/44923423/180345204-2aae71ca-894e-458a-a863-9fb82a83ef95.png">
 
 
