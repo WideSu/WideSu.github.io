@@ -95,6 +95,9 @@ chi-square: distribution relationship between 2 variables
 
 #### Mutual Information
 KL-divergence to depict dependencies between 2 variables
+For discrete probability distributions {\displaystyle P}P and {\displaystyle Q}Q defined on the same probability space, {\displaystyle {\mathcal {X}}}{\mathcal {X}}, the relative entropy from {\displaystyle Q}Q to {\displaystyle P}P is defined[11] to be
+
+{\displaystyle D_{\text{KL}}(P\parallel Q)=\sum _{x\in {\mathcal {X}}}P(x)\log \left({\frac {P(x)}{Q(x)}}\right).}
 
 
 ### Wrapper methods: ([SelectFromModel](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.SelectFromModel.html) in Sklearn)
@@ -115,7 +118,11 @@ Embedded methods combine the qualities’ of filter and wrapper methods. It’s 
 Some of the most popular examples of these methods are LASSO and RIDGE regression which have inbuilt penalization functions to reduce overfitting.
 
 #### Lasso
-objective is to minimize the loss while enforcing a constraint on the weights of the features
+objective is to minimize the loss while enforcing a constraint on the weights of the features.
+
+Lasso is L1 regression.
+From a practical standpoint, L1 tends to shrink coefficients to zero whereas L2 tends to shrink coefficients evenly. L1 is therefore useful for feature selection, as we can drop any variables associated with coefficients that go to zero. L2, on the other hand, is useful when you have collinear/codependent features.
+
 ```{python}
 reg = LassoCV()
 reg.fit(X, y)
