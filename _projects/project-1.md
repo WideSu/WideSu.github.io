@@ -205,7 +205,6 @@ Using SHAP value from game theory to estimate how each feature contribute to the
 
 
 ## Step6: Deploy the model on MLflow
-![image](https://user-images.githubusercontent.com/44923423/180349887-ac44474a-2b43-4853-ac16-59d4de4a0155.png)
 <img width="439" alt="image" src="https://user-images.githubusercontent.com/44923423/180350219-9ba6a410-ca76-4f63-b98f-265993a7bf69.png">
 
 
