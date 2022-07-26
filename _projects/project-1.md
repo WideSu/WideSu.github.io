@@ -3,18 +3,35 @@ title: "Project 1-Predictive maintenance(time series)"
 excerpt: "Predictive maintenance for diamond cutter machines<br/><img src='/images/proj1.png'>"
 collection: projects
 ---
+## Tasks and schedule
+
+![image](https://user-images.githubusercontent.com/44923423/180922756-2a22b56c-6d2d-45f9-8609-43f84b2d3ad7.png)
 
 ## Project results and final model
 
-Achieved a test-set Recall rate of 0.958 on the final XGBoost model.
+Since the company wants to **predict every alarm that may occur**, I use **recall rate** as the most important metric. Besides, I also records other accuracy metrics including accuracy, precision, f1 score and AUC score for selecting the best model.
+
+We tried 5 models including:
+- RF: Random forest, which is an ensemble learning method for classification, regression and other tasks that operates by constructing a multitude of decision trees at training time.
+- [XGBoost](https://machinelearningmastery.com/gentle-introduction-xgboost-applied-machine-learning/): XGBoost is an implementation of gradient boosted decision trees designed for speed and performance.
+- LightGBM: Light GBM is a fast, distributed, high-performance gradient boosting framework based on decision tree algorithm, used for ranking, classification and many other machine learning tasks.
+- SVM: Support vector machines (SVMs) are a set of supervised learning methods used for classification, regression and outliers detection.
+- LSTM: LSTM is a special kind of recurrent neural network that deals with long-term dependencies. It can remember information from past data and is capable of learning order dependence in sequence prediction problems.
+
+Finally, we achieved a test-set Recall rate of 0.874 on the final XGBoost model. 
+
+Why we choose XGBoost? It's true that random forest performs slightly better on recall(our main metric) but **XGBoost has a good performance on all metrics**. And it also **performs stable** when we **change the predict time, sample time**.
 
 |FIELD1       |RR    |AC    |PS    |F1    |AUC   |
 |-------------|------|------|------|------|------|
-|XGBoost      **|0.9576|0.9583|0.9916|0.9743|0.9638|**
-|Random Forest|0.8122|0.9179|0.7773|0.7944|0.9139|
-|LightGBM     |0.6677|0.9337|0.9897|0.7974|0.9551|
+|XGBoost      **|0.874|0.9631|0.9916|0.9176|0.9667|**
+|Random Forest|0.8931|0.8132|0.591|0.6923|0.9285|
+|LightGBM     |0.8426|0.9728|0.9984|0.|0.9139|
 |SVM          |0.5167|0.8358|0.5911|0.5514|0.6557|
 |LSTM         |0.7342|0.9762|0.9765|0.8382|0.9449|
+
+<img width="373" alt="image" src="https://user-images.githubusercontent.com/44923423/180921941-c462fb49-c705-4fb7-8d0f-13462fa0c9a9.png">
+
 
 ## Project Objective
 
