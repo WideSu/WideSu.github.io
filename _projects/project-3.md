@@ -107,6 +107,7 @@ Fig8: Cloud Services we use in this project
 #### End Product
 
 By using the endpoint of our trained model, we build a website application which enables user to key in their desired fly date and time and get to know the delay for each airline at this time as shown in Fig 8. For example, a tourist wants to fly from John F Kennedy International Airport in New York to San Francisco International Airport on July 2nd in the morning. He or she can select the specifics of the trip and use our model to predict its delay.
+
 Fig 9: Index of our website where users can select origin, destination, airline and datetime to predict its delay
 ![image](https://user-images.githubusercontent.com/44923423/180157686-69b83865-7332-4e53-ad3f-6755f344309e.png)
 
@@ -119,7 +120,7 @@ Hyperparameter tuning requires multiple runs of the training application within 
 
 ![image](https://user-images.githubusercontent.com/44923423/180158266-0daf2e82-ae40-4cec-ba9c-b04cf405ce0a.png)
 
-Model monitoring
+**Model monitoring**
 - Training-serving skew occurs when feature distribution in production deviates from the training data.
 - Prediction drift occurs when feature distribution in production changes over time. This option is enabled when the original training data is not available. 
 In the project, since we have the training data, we could enable the training-serving skew monitoring.
