@@ -8,24 +8,30 @@ In project, we need to come up with a model that can be used to predict bike ren
 
 # Objective
 <img width="723" alt="image" src="https://user-images.githubusercontent.com/44923423/182752597-24327cb4-5927-4056-84e5-0d0ec28d373a.png">
-## Open the Azure ML Studio and Create a New Dataset
+- Open the Azure ML Studio and Create a New Dataset
 In the Azure ML studio, create a new dataset using the bike rental data file from Microsoft.
 
-## Review the Dataset
+- Review the Dataset
 Take a look at the data you’re working with and see if there are any missing values or values that will cause issues.
 
-## Design a Pipeline to Predict Bike Rentals
+- Design a Pipeline to Predict Bike Rentals
 
 Using the Azure Machine Learning designer, drag and drop modules to create a pipeline that will train a regression model to predict bike rentals. When setting the compute type, set it to compute cluster.
 
-## Review the Results
+- Review the Results
 
 Take a look at some of the metrics for the run. For example, the R2 score or the root mean squared error.
 
-## Bonus: Optimization of the Model
+- Bonus: Optimization of the Model
 
 As a fun bonus objective, feel free to tweak some settings in your pipeline to see if you can get better scores for your model.
 
+# Create a New Dataset
 
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/44923423/182752897-dbcd4487-10b3-463e-9eb2-0b5f0a9de616.png">
 
+# Design a Pipeline
 
+<img width="924" alt="image" src="https://user-images.githubusercontent.com/44923423/182753865-53c52890-fd69-488f-87ae-3c0d5b6f3469.png">
+
+# Review the Results
