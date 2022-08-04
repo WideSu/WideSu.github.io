@@ -55,8 +55,21 @@ We can design a simple pipeline with 7 modules including: "select data", "clean 
 
 <img width="442" alt="image" src="https://user-images.githubusercontent.com/44923423/182755041-fd389212-46ef-435a-a58a-00ca1563259e.png">
 
-# Optimize the model
+# Optimization
 
-We can further optimise the model by using boosted decision tree.
+To get better result, we can try different models for this task. 
+
+1. We can further optimise the model by using boosted decision tree.
 
 <img width="1349" alt="image" src="https://user-images.githubusercontent.com/44923423/182754784-911253cb-5a10-4f4d-93f4-3c838f762e95.png">
+
+We can see that the coefficient of determination(Rˆ2) is much better. It increased to 0.7 from 0.6
+<img width="1096" alt="image" src="https://user-images.githubusercontent.com/44923423/182756734-973fa562-522c-46f3-92cb-5f43b237a6c4.png">
+
+2. And we can further improve from it by using the decision forest regression model
+
+<img width="1096" alt="image" src="https://user-images.githubusercontent.com/44923423/182756398-8dc096f4-1447-4c04-b12e-6276f8fcdd9e.png">
+
+We can see that the coefficient of determination(Rˆ2) is even better. It increased to 0.8 from 0.6
+
+<img width="1096" alt="image" src="https://user-images.githubusercontent.com/44923423/182756666-f11ecbcd-6eb2-4615-b75d-87098a72f062.png">
