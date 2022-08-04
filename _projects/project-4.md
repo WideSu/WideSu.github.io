@@ -32,7 +32,7 @@ Firstly, let's create a dataset on Azure Data Lake using web url of our dataset.
 
 <img width="1349" alt="image" src="https://user-images.githubusercontent.com/44923423/182754429-e947c30c-0469-4270-8918-f1481a73554d.png">
 
-<img width="800" alt="image" src="https://user-images.githubusercontent.com/44923423/182752897-dbcd4487-10b3-463e-9eb2-0b5f0a9de616.png">
+<img width="973" alt="image" src="https://user-images.githubusercontent.com/44923423/182755236-8d7657a4-8bf7-4928-a416-5e73cc210278.png">
 
 # Design a Pipeline
 
