@@ -28,6 +28,8 @@ As a fun bonus objective, feel free to tweak some settings in your pipeline to s
 
 # Create a New Dataset
 
+<img width="1349" alt="image" src="https://user-images.githubusercontent.com/44923423/182754429-e947c30c-0469-4270-8918-f1481a73554d.png">
+
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/44923423/182752897-dbcd4487-10b3-463e-9eb2-0b5f0a9de616.png">
 
 # Design a Pipeline
