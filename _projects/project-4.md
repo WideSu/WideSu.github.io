@@ -35,8 +35,21 @@ Firstly, let's create a dataset on Azure Data Lake using web url of our dataset.
 <img width="973" alt="image" src="https://user-images.githubusercontent.com/44923423/182755236-8d7657a4-8bf7-4928-a416-5e73cc210278.png">
 
 # Design a Pipeline
-
+We can design a simple pipeline with 7 modules including: "select data", "clean missing data", "split data", "train", "score","evaluate", "linear regression" modules
+  
 <img width="924" alt="image" src="https://user-images.githubusercontent.com/44923423/182753865-53c52890-fd69-488f-87ae-3c0d5b6f3469.png">
+
+<img width="1234" alt="image" src="https://user-images.githubusercontent.com/44923423/182755473-45160521-e8c8-4eaa-a0a9-ee452d121021.png">
+
+<img width="893" alt="image" src="https://user-images.githubusercontent.com/44923423/182755675-fa7aeec1-637c-4d56-99cf-fb2351b20c97.png">
+
+<img width="893" alt="image" src="https://user-images.githubusercontent.com/44923423/182755842-6551721a-aa84-4a48-8e37-9c304cfa70ae.png">
+
+<img width="893" alt="image" src="https://user-images.githubusercontent.com/44923423/182755915-3394b9b6-167c-4201-86cc-1c81798013fb.png">
+
+<img width="893" alt="image" src="https://user-images.githubusercontent.com/44923423/182755942-4b91ca1d-c023-45d2-a6d3-7ad6a6f13ff7.png">
+
+<img width="893" alt="image" src="https://user-images.githubusercontent.com/44923423/182755966-f26e2c73-4526-408b-8ddc-572fa6932e76.png">
 
 # Review the Results
 
