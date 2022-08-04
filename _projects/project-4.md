@@ -1,5 +1,5 @@
 ---
-title: "Project 4-Predict the bike rentals with Azure"
+title: "Project 4-Predict the bike rentals with Azure ML Designer"
 excerpt: "MLops on Azure<br/><img src='/images/proj4.png'>"
 collection: projects
 ---
@@ -28,6 +28,8 @@ As a fun bonus objective, feel free to tweak some settings in your pipeline to s
 
 # Create a New Dataset
 
+Firstly, let's create a dataset on Azure Data Lake using web url of our dataset.
+
 <img width="1349" alt="image" src="https://user-images.githubusercontent.com/44923423/182754429-e947c30c-0469-4270-8918-f1481a73554d.png">
 
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/44923423/182752897-dbcd4487-10b3-463e-9eb2-0b5f0a9de616.png">
@@ -37,3 +39,11 @@ As a fun bonus objective, feel free to tweak some settings in your pipeline to s
 <img width="924" alt="image" src="https://user-images.githubusercontent.com/44923423/182753865-53c52890-fd69-488f-87ae-3c0d5b6f3469.png">
 
 # Review the Results
+
+<img width="442" alt="image" src="https://user-images.githubusercontent.com/44923423/182755041-fd389212-46ef-435a-a58a-00ca1563259e.png">
+
+# Optimize the model
+
+We can further optimise the model by using boosted decision tree.
+
+<img width="1349" alt="image" src="https://user-images.githubusercontent.com/44923423/182754784-911253cb-5a10-4f4d-93f4-3c838f762e95.png">
