@@ -1,6 +1,6 @@
 ---
-title: "Project 6-Multi-lingual Named Entity Recognization"
-excerpt: "NER<br/><img src='/images/proj6.png'>"
+title: "Project 5-Multi-lingual Named Entity Recognization"
+excerpt: "NER<br/><img src='/images/proj5.png'>"
 collection: projects
 ---
 
