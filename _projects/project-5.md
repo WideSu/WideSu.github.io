@@ -1,5 +1,5 @@
 ---
-title: "Project 5-Which Tech Company will be the next Champion?"
+title: "Project 5-Which company will be the next tech gaint?"
 excerpt: "NLP application<br/><img src='/images/proj5.png'>"
 collection: projects
 ---
