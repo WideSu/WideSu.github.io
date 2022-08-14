@@ -39,6 +39,7 @@ Skills
 In data science:
 
 * R, Python to do data ETL
+* MySQL for quering and extracting data
 * Data visualisation
   * Tableau: check out the [dashboards](https://public.tableau.com/app/profile/huang.anni/) I have done
   * R distill website: check my [website](https://www.linkedin.com/in/annihuang2021/overlay/1635495604261/single-media-viewer/) for analysing Ohio city's demographic data
