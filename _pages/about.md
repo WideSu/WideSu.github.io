@@ -49,9 +49,18 @@ In software development:
 * Java for backend development:
   * SpringMVC framework: ERP system [Github Repo](https://github.com/WideSu/JavaEEWeb)
   * Spring Boot
-* Front-end developent:
-  * Django Website (python)
+* Python for backend developent:
+  * Django framework
+* Front-end development:
   * Dingding app (similar to wechat app)
+  * React framework
+  * Vue framework
+
+In MLops:
+* AWS
+* GCP
+* Microsoft Azure
 
 Industrial knowledge:
 * Semi-conductor industry: I have done a 6-month internship in IKAS which concentrate on AI solutions for semi-conductor factories. I learned a lot of terms and interesting products which can be extended to other companies in **manufacturing** industry as well.
+* Financial industry: I am learning basic financial knowledge on Bloomberg, and hopes to go into data science in Finance someday.
