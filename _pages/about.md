@@ -8,14 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I’m HUANG Anni, a student at the Singapore Management University in the School of Computing and Information System. I’m an interested to use AI algorithms to improve people's life.
+Hi! I’m HUANG Anni, a research engineer at **Singapore Management University** in the School of Computing and Information System. I’m an interested to use AI algorithms to improve people's life.
 
 
 Recent work
 ======
 
-I am working on speech enhancement and reinforcement learning recently.
-Check out my [blog]([https://widesu.github.io/posts/2022/06/blog-post-1/](https://widesu.github.io/year-archive/)).
+I registered for 2022 IEEE SSCI conference which is held on 4-7th December 2022.
 
 Education
 ======
@@ -24,16 +23,16 @@ Education
 
 Work experience
 ======
-* Winter 2019: Research Assistant
-  * Huaqiao University
-  * Duties included: Build a Java EE web where researchers can upload their data and train model on it.
-  * Supervisor: Professor [Li Haibo](https://faculty.hqu.edu.cn/lihaibo/en/index.htm)
-
+* Sep 2022-present: Research Engineer
+  * [Singapore Management University](https://www.smu.edu.sg/)
 * Dec 2021-Jun 2022: Machine Learning Engineer Intern
   * [IKAS industry](https://www.ikasinfo.com/)
   * Duties included: Build data science pipeline, conduct experient, report insights to teams
   * Supervisor: [Docter Liu(CTO of IKAS)](https://www.linkedin.com/in/bin-liu-phd-pmp-aa338760/?originalSubdomain=sg)
-  
+* Winter 2019: Research Assistant
+  * Huaqiao University
+  * Duties included: Build a Java EE web where researchers can upload their data and train model on it.
+  * Supervisor: Professor [Li Haibo](https://faculty.hqu.edu.cn/lihaibo/en/index.htm)  
 Skills
 ======
 In data science:
