@@ -199,18 +199,15 @@ By tuning the pipeline, we can achieved quite an improvement over a simple class
 
 Besides, we also tried different hyperparameter tunning packages.
 
-|Library                                       |Pros                                                        |Cons                                             |Scenario                                |
-|----------------------------------------------|------------------------------------------------------------|-------------------------------------------------|----------------------------------------|
-|Dask                                          |Run model with lazy loading;                                |Only support models with `partial fit` interface;|Memory constrained loading and training;|
-|H2O                                           |Systematic and well wrapped;                                |Only 2 basic methods (grid/random)               |Fast development and deployment;        |
-|Scikit-learn                                  |Flexible and basic;                                         |Only 2 basic methods (grid/random);              |                                        |
-|New methods are not stable;                   |Tradictional tuning;                                        |                                                 |                                        |
-|HyperOpt                                      |High-speed and flexible;                                    |                                                 |                                        |
-|New search method: TPE/ATPE;                  |Out-of-date interface                                       |Time-limited                                     |                                        |
-|Ray                                           |Systematic and well wrapped;                                |Too customized and not flexible;                 |                                        |
-|Time-cost on initialization                   |Fast development and deployment with various tuning methods;|                                                 |                                        |
-|Optuna                                        |Well-performed and light;                                   |                                                 |                                        |
-|Include all popular and stable tuning methods;|Not well wrapped for all methods                            |Accurate, flexible required                      |                                        |
+|Library     |Pros                                                                    |Cons                                                           |Scenario                                                    |
+|------------|------------------------------------------------------------------------|---------------------------------------------------------------|------------------------------------------------------------|
+|Dask        |Run model with lazy loading;                                            |Only support models with partial fit interface;                |Memory constrained loading and training;                    |
+|H2O         |Systematic and well wrapped;                                            |Only 2 basic methods (grid/random)                             |Fast development and deployment;                            |
+|Scikit-learn|Flexible and basic;                                                     |Only 2 basic methods (grid/random); New methods are not stable;|Tradictional tuning                                         |
+|HyperOpt    |High-speed and flexible; New search method: TPE/ATPE;                   |Out-of-date interface                                          |Time-limited                                                |
+|Ray         |Systematic and well wrapped;                                            |Too customized and not flexible; Time-cost on initialization   |Fast development and deployment with various tuning methods;|
+|Optuna      |Well-performed and light; Include all popular and stable tuning methods;|Not well wrapped for all methods                               |Accurate, flexible required                                 |
+
 
 
 ## Step5: Justify selection of models
