@@ -82,13 +82,13 @@ analytics:
 author:
   name             : "Huang Anni"
   avatar           : "profile.png"
-  bio              : "I'm a student at Singapore Management University, concentrating on Artificial Intelligence."
+  bio              : "I'm a research engineer at Singapore Management University, concentrating on Artificial Intelligence."
   location         : "Singapore"
-  employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  employer         : "Singapore Management University"
+  pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  googlescholar    : # "http://yourfullgooglescholarurl.com"
   email            : "annihuang.2021@mitb.smu.edu.sg"
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     : "https://www.researchgate.net/profile/Anni-Huang-3"
   uri              :
   bitbucket        :
   codepen          :
