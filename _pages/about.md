@@ -14,7 +14,7 @@ Hi! I’m HUANG Anni, a research engineer at **Singapore Management University**
 Recent work
 ======
 
-I registered for 2022 IEEE SSCI conference which is held on 4-7th December 2022.
+I will attend the **2022 IEEE SSCI conference** which is held on **4-7th December 2022**.
 
 Education
 ======
