@@ -33,6 +33,7 @@ Work experience
   * Huaqiao University
   * Duties included: Build a Java EE web where researchers can upload their data and train model on it.
   * Supervisor: Professor [Li Haibo](https://faculty.hqu.edu.cn/lihaibo/en/index.htm)  
+  
 Skills
 ======
 In data science:
