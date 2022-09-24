@@ -18,11 +18,13 @@ I will attend the **2022 IEEE SSCI conference** which is held on **4-7th Decembe
 
 Education
 ======
-* B.S. in Computer Science, Huaqiao University, China, 2017-2021
+
 * M.S. in IT in Business, Singapore Management University, Singapore, 2021-2022
+* B.S. in Computer Science, Huaqiao University, China, 2017-2021
 
 Work experience
 ======
+
 * Sep 2022-present: Research Engineer
   * [Singapore Management University](https://www.smu.edu.sg/)
 * Dec 2021-Jun 2022: Machine Learning Engineer Intern
