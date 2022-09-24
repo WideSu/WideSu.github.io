@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Huang Anni / Research Blog"
+title                    : "Huang Anni / Research Homepage"
 title_separator          : "-"
 name                     : &name "Huang Anni"
 description              : &description "personal description"
