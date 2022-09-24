@@ -16,15 +16,18 @@ Education
 
 Work experience
 ======
-* Winter 2019: Research Assistant
-  * Huaqiao University
-  * Duties included: Build a Java EE web where researchers can upload their data and train model on it.
-  * Supervisor: Professor [Li Haibo](https://faculty.hqu.edu.cn/lihaibo/en/index.htm)
-
+* Sep 2022-present: Research Engineer
+  * [Singapore Management University](https://www.smu.edu.sg/)
+  
 * Dec 2021-Jun 2022: Machine Learning Engineer Intern
   * [IKAS industry](https://www.ikasinfo.com/)
   * Duties included: Build data science pipeline, conduct experient, report insights to teams
   * Supervisor: [Docter Liu(CTO of IKAS)](https://www.linkedin.com/in/bin-liu-phd-pmp-aa338760/?originalSubdomain=sg)
+  
+* Winter 2019: Research Assistant
+  * Huaqiao University
+  * Duties included: Build a Java EE web where researchers can upload their data and train model on it.
+  * Supervisor: Professor [Li Haibo](https://faculty.hqu.edu.cn/lihaibo/en/index.htm)
   
 Skills
 ======
