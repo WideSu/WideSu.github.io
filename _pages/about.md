@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I’m HUANG Anni, a research engineer at **Singapore Management University** in the School of Computing and Information System. I’m an interested to use AI algorithms to improve people's life.
+Hi! I’m HUANG Anni, a research engineer at **Singapore Management University** in the School of Computing and Information System. I’m interested to use AI algorithms to improve people's life.
 
 
 Recent work
