@@ -8,13 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I’m HUANG Anni, a research engineer at **Singapore Management University** in the School of Computing and Information System. I’m interested to use AI algorithms to improve people's life.
+Hi! I’m HUANG Anni, a research engineer at **Singapore Management University** in the School of Computing and Information System. I’m interested in Data science in Biomedical and Healthcare domains.
 
 
 Recent work
 ======
 
-I will attend the **2022 IEEE SSCI conference** which is held on **4-7th December 2022**.
+Our [group](https://sites.google.com/smu.edu.sg/cognitiveandneuralcomputing/home) is hosting the **[2022 IEEE SSCI conference](https://www.ieeessci2022.org/index.html)** which is held on **4-7th December 2022** which will talk about the recent challenges in cognitive computing and new trends. Welcome to [register](https://www.ieeessci2022.org/registration.html).
 
 Education
 ======
@@ -43,9 +43,9 @@ In data science:
 * R, Python to do data ETL
 * MySQL for quering and extracting data
 * Data visualisation
-  * Tableau: check out the [dashboards](https://public.tableau.com/app/profile/huang.anni/) I have done
-  * R distill website: check my [website](https://www.linkedin.com/in/annihuang2021/overlay/1635495604261/single-media-viewer/) for analysing Ohio city's demographic data
-* Build deep learning models using **PyTorch**
+  * Tableau: check out the [dashboards](https://public.tableau.com/app/profile/huang.anni/)
+  * R distill website: check my [website](https://www.linkedin.com/in/annihuang2021/overlay/1635495604261/single-media-viewer/) for analysing Ohio city's demographic, financial and social interactions status
+* Build deep learning models using PyTorch
   * Code repo: [Session based recommendation](https://github.com/AmazingDD/serenRec/tree/dev/seren/model)
 
 In software development:
@@ -65,5 +65,5 @@ In MLops:
 * Microsoft Azure
 
 Industrial knowledge:
-* Semi-conductor industry: I have done a 6-month internship in IKAS which concentrate on AI solutions for semi-conductor factories. I learned a lot of terms and interesting products which can be extended to other companies in **manufacturing** industry as well.
+* Semi-conductor industry: I have done a 6-month internship in IKAS which concentrate on AI solutions for the real-time sensor data from semi-conductor factories.
 * Financial industry: I am learning basic financial knowledge on Bloomberg, and hopes to go into data science in Finance someday.

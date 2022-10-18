@@ -34,7 +34,7 @@ In data science:
 * R, Python to do data ETL
 * Data visualisation
   * Tableau: check out the [dashboards](https://public.tableau.com/app/profile/huang.anni/) I have done
-  * R distill website: check my [website](https://www.linkedin.com/in/annihuang2021/overlay/1635495604261/single-media-viewer/) for analysing Ohio city's demographic data
+  * R distill website: check my [website](https://www.linkedin.com/in/annihuang2021/overlay/1635495604261/single-media-viewer/) for analysing Ohio city's demographic, financial and social interactions status
 * Build deep learning models using **PyTorch**
   * Code repo: [Session based recommendation](https://github.com/AmazingDD/serenRec/tree/dev/seren/model)
 
