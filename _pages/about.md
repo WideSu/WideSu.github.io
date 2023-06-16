@@ -14,7 +14,8 @@ Hi! I’m HUANG Anni, a research engineer at **Singapore Management University**
 Recent work
 ======
 
-Our [group](https://sites.google.com/smu.edu.sg/cognitiveandneuralcomputing/home) is hosting the **[2022 IEEE SSCI conference](https://www.ieeessci2022.org/index.html)** which is held on **4-7th December 2022** which will talk about the recent challenges in cognitive computing and new trends. Welcome to [register](https://www.ieeessci2022.org/registration.html).
+* Working on [ADL Monitoring and Wellness Analysis for Aging in Place](https://site.smu.edu.sg/sajl#research-pillars/human-ai-synergy) Project in SMU-A* STAR Joint Lab. 
+* Our [group](https://sites.google.com/smu.edu.sg/cognitiveandneuralcomputing/home) is hosting the **[2022 IEEE SSCI conference](https://www.ieeessci2022.org/index.html)** which is held on **4-7th December 2022** which will talk about the recent challenges in cognitive computing and new trends. Welcome to [register](https://www.ieeessci2022.org/registration.html).
 
 Education
 ======
