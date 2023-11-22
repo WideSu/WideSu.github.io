@@ -29,9 +29,9 @@ Education
 
 Work experience
 ======
-
-* Sep 2022-present: Research Engineer
-  * [Singapore Management University](https://www.smu.edu.sg/)
+* Nov 2023-Present: Research Scientist
+* Sep 2022-Nov 2023: Research Engineer
+  * [A*STAR-SMU Joint Lab](https://site.smu.edu.sg/sajl)
 * Dec 2021-Jun 2022: Machine Learning Engineer Intern
   * [IKAS industry](https://www.ikasinfo.com/)
   * Duties included: Build data science pipeline, conduct experiments for predictive maintenance, report insights to SG and China's algorithm teams
@@ -54,6 +54,7 @@ In data science:
   * Code repo: [Session based recommendation](https://github.com/AmazingDD/serenRec/tree/dev/seren/model)
 
 In software development:
+* Typescript Fullstack Web Application [(Github)](https://github.com/WideSu?tab=repositories) [(Deployed Website on Azure)](https://typescript-fullstack.azurewebsites.net/)[(Deployed Website on Render)](https://dashboard.render.com/web/srv-clecb7vgsrdc739rgte0)
 * Java for backend development:
   * SpringMVC framework: ERP system [Github Repo](https://github.com/WideSu/JavaEEWeb)
   * Spring Boot
