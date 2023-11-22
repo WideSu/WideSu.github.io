@@ -60,11 +60,13 @@ Fig6: Model training section in the pipeline
 
 Below is an evaluation of the advantages and disadvantages of using AutoML based on the team’s experience of using GCP’s AutoML solution.
 Pros & Cons of AutoML vs Custom Training
+
 Pros
 - AutoML solutions can use only a small amount of data for training and still obtain good results. This is because most AutoML solutions can rely on transfer learning.
 - Good for problems which are generalisable to common problems.
 - No need to build a machine learning model from scratch
 - Big Tech AutoML vendors are more likely to incorporate state of art technology, reducing the burden of keep up with latest AI development.
+
 Cons
 - Not always applicable to niche use cases 
 - Architecture of model in AutoML is typically unknown. Hence lesser insights can be derived as compared to doing Machine Learning by hand.
