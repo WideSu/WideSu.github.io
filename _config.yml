@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Huang Anni / Research Homepage"
+title                    : "Huang Anni / Homepage"
 title_separator          : "-"
 name                     : &name "Huang Anni"
 description              : &description "personal description"
@@ -87,7 +87,7 @@ author:
   employer         : "Singapore Management University"
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : # "http://yourfullgooglescholarurl.com"
-  email            : "annihuang.2021@mitb.smu.edu.sg"
+  email            : "huanganni380@gmail.com"
   researchgate     : "https://www.researchgate.net/profile/Anni-Huang-3"
   uri              :
   bitbucket        :

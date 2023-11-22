@@ -11,12 +11,14 @@ redirect_from:
 
 Education
 ======
-* B.S. in Computer Science, Huaqiao University, China, 2017-2021
 * M.S. in IT in Business, Singapore Management University, Singapore, 2021-2022
+* B.S. in Computer Science, Huaqiao University, China, 2017-2021
 
 Work experience
 ======
-* Sep 2022-present: Research Engineer
+* Nov 2023-present: A*STAR-SMU Joint Lab-Research Scientist
+  * [ A*STAR-SMU Joint Lab](https://site.smu.edu.sg/sajl)
+* Sep 2022-Nov 2023: A*STAR-SMU Joint Lab-Research Engineer
   * [Singapore Management University](https://www.smu.edu.sg/)
 * Dec 2021-Jun 2022: Machine Learning Engineer Intern
   * [IKAS industry](https://www.ikasinfo.com/)
@@ -47,7 +49,14 @@ In software development:
   * Dingding app (similar to wechat app)
 
 Industrial knowledge:
+* AI in Healthcare:
+  * Using Adaptive Resonance Map to handle noisy, continous data 
+  * generate IF-ELSE rules for explainability
 * Semi-conductor industry: I have done a 6-month internship in IKAS which concentrate on AI solutions for semi-conductor factories. I learned a lot of terms and interesting products which can be extended to other companies in **manufacturing** industry as well.
+
+Certificates:
+* Machine Learning Engineering for Production (MLOps) Specialization-DeepLearning.AI
+* AWS Certified Cloud Practitioner
 
 <!-- Publications
 ======
