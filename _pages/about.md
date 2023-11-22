@@ -8,7 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I’m HUANG Anni, a research engineer at **Singapore Management University** in the School of Computing and Information System. I’m interested in Data science in Biomedical and Healthcare domains.
+Hi! I’m HUANG Anni.
+A researcher in A*STAR Joint Lab with tested experience in machine learning, data engineering, data analytics and AWS services.
+- Led feature engineering for IoT data, optimizing data processing pipelines for enhanced analytics.
+- Implemented and maintained AWS enterprise cloud infrastructures, ensuring high availability and minimal downtime.
+- Developed, evaluated, and compared machine learning models, staying updated with industry best practices.
+- Demonstrated rapid adaptation to new technologies and platforms through self-guided learning from AWS documentation and blogs.
+
 
 
 Recent work
