@@ -66,9 +66,12 @@ In software development:
   * Vue framework
 
 In MLops:
-* AWS
+* AWS Data Pipeline:
+  * during my work for in-house MCI detection with **A*STAR-SMU Joint Lab**
 * GCP
+  * group project, during my master degree for MLops
 * Microsoft Azure
+  * deploy Typescript website
 
 Industrial knowledge:
 * Semi-conductor industry: I have done a 6-month internship in IKAS which concentrate on AI solutions for the real-time sensor data from semi-conductor factories.
