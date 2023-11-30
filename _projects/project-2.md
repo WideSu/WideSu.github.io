@@ -1,5 +1,5 @@
 ---
-title: "Project 2-ERP system (SpringMVC+Bootstrap)"
+title: "Project 2-Predictive Maintenance System (SpringMVC+Bootstrap)"
 excerpt: "Java EE Web<br/><img src='/images/proj2.png'>"
 collection: projects
 ---
@@ -18,6 +18,7 @@ This is a research project I did with my Prof Li Haibo when I was a sophomore, s
 - JSP JSTL JavaScript
 - shiro Authority control
 - Bootstrap
+- Machine Learning
 
 
 ## System structure
