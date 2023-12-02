@@ -5,7 +5,7 @@ collection: projects
 ---
 ## Tasks and schedule
 
-![image](https://user-images.githubusercontent.com/44923423/180922756-2a22b56c-6d2d-45f9-8609-43f84b2d3ad7.png)
+<iframe width="100%" height="800" src="files/project1.pdf">
 
 ## Project results and final model
 
