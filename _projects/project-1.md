@@ -3,9 +3,6 @@ title: "Project 1-Predictive maintenance(time series)"
 excerpt: "Predictive maintenance for diamond cutter machines<br/><img src='/images/proj1.png'>"
 collection: projects
 ---
-## Tasks and schedule
-
-<iframe width="100%" height="800" src="files/project1.pdf">
 
 ## Project results and final model
 
