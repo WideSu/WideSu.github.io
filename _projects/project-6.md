@@ -1,6 +1,6 @@
 ---
 title: "Project 6-Multilingual Named Entity Recognition"
-excerpt: "NLP application<br/><img src='/images/proj5.png'>"
+excerpt: "Transformer<br/><img src='/images/proj6.png'>"
 collection: projects
 ---
 
