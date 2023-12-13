@@ -19,13 +19,13 @@ Finally, we achieved a test-set Recall rate of 0.874 on the final XGBoost model.
 
 Why we choose XGBoost? It's true that random forest performs slightly better on recall(our main metric) but **XGBoost has a good performance on all metrics**. And it also **performs stable** when we **change the predict time, sample time**.
 
-|FIELD1       |RR    |AC    |PS    |F1    |AUC   |
+|FIELD1       |AC    |PS   |RR    |F1    |AUC   |
 |-------------|------|------|------|------|------|
-|XGBoost      **|0.874|0.9631|0.9916|0.9176|0.9667|**
-|Random Forest|0.8931|0.8132|0.591|0.6923|0.9285|
-|LightGBM     |0.8426|0.9728|0.9984|0.|0.9139|
-|SVM          |0.5167|0.8358|0.5911|0.5514|0.6557|
-|LSTM         |0.7342|0.9762|0.9765|0.8382|0.9449|
+|XGBoost      *|0.9631|0.9916|0.874|0.9176|0.9667|*
+|Random Forest|0.8132|0.591|0.8931|0.6923|0.9285|
+|LightGBM     |0.9728|0.9984|0.8426|0.9139|0.9543|
+|SVM          |0.8358|0.5911|0.5514|0.5167|0.6557|
+|LSTM         |0.9762|0.9765|0.8382|0.7342|0.9449|
 
 <img width="373" alt="image" src="https://user-images.githubusercontent.com/44923423/180921941-c462fb49-c705-4fb7-8d0f-13462fa0c9a9.png">
 

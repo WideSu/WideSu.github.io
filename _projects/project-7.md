@@ -1,6 +1,6 @@
 ---
-title: "Project 6-Multilingual Named Entity Recognition"
-excerpt: "NLP Application<br/><img src='/images/proj6.png'>"
+title: "Project 7-Home Credit Default Risk"
+excerpt: "AI in Finance<br/><img src='/images/proj7.png'>"
 collection: projects
 ---
 
