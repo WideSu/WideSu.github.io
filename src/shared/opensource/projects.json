@@ -20,9 +20,9 @@
     },
     {
       "id": "R_kgDOHGkh-Q",
-      "name": "CS606_ITC",
+      "name": "University_Timetabling",
       "createdAt": "2022-04-01T09:14:41Z",
-      "url": "https://github.com/WideSu/CS606_ITC",
+      "url": "https://github.com/WideSu/University_Timetabling",
       "description": "The university timetabling is a classical combinatorial optimization problem that takes a large number of variables and constraints into account. Student allocating and class scheduling decisions need to be made jointly against the backdrop of classroom and timeslot penalty and subject to practical rules. We model this problem as a two-stage mixed integer program which search for a feasible solution at the start and graduately improve from it iteratively, which reduced the time to get optimal solution by 58\\%. Besides, we used a constraint programming method with the same objective function and constraints and compared the results for the two methods on 2019 ITC datasets. A comparison with results reported in this passage shows that the MIP approach outperformed the constraint programming approach in faster speed and better solution.",
       "isFork": false,
       "languages": [

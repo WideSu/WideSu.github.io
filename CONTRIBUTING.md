@@ -8,7 +8,7 @@ Here are some fun and precise steps to get you started:
 
 1. **Fork the Repository** 🍴
 
-   - Click the "Fork" button on the top right of the [MasterPortfolio repository](https://github.com/ashutosh1919/masterPortfolio) page on GitHub. This will create a copy of the project in your own GitHub account.
+   - Click the "Fork" button on the top right of the [MasterPortfolio repository](https://github.com/widesu/widesu.github.io) page on GitHub. This will create a copy of the project in your own GitHub account.
 
 2. **Clone Your Fork** 🧙‍♂️
 
