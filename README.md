@@ -18,7 +18,7 @@
 </p>
 <p align="center">If you want to discuss about something, you can ask on my <a href="https://discord.com/invite/GkcbM5bwZr">Discord Server</a>.</p>
 <p align="center"><a href="https://widesu.github.io/">View live website! Click here🤠</a></p>
-<p align="center"><img src="https://github.com/WideSu/CreditRiskDetection/assets/44923423/cbd7b311-a169-4097-9b8b-7afb2c57cd36" height="400"width="400" ></p>
+<p align="center"><img src="https://github.com/WideSu/CreditRiskDetection/assets/44923423/cbd7b311-a169-4097-9b8b-7afb2c57cd36" height="400" ></p>
 
 # Sections 📚
 
