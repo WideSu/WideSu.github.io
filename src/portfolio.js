@@ -578,7 +578,7 @@ const experience = {
           company_url: "https://www.smu.edu.sg/",
           logo_path: "smu_logo.png",
           duration: "Aug 2021 - Jan 2022",
-          location: "Hyderabad, Singapore",
+          location: "Hybrid, Singapore",
           description:
             "Hold weekly discussion sessions to answer questions from classmates in 2 modules: Python programming and analytics, Algorithm Design and Implementation.",
           color: "#4285F4",
