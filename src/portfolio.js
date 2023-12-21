@@ -389,7 +389,7 @@ const degrees = {
       descriptions: [
         "⚡ I have studied basic software engineering and programming languages like C++, Java, DS, Algorithms, DBMS, OS, Network etc.",
         "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development using Java, Spring Boot and Bootstrap.",
-        "⚡ I attened many competitions, e.g. 2019 Huawei National Compiler Design Contest (79/100 in final round) - Team Leade",
+        "⚡ I attened many competitions, e.g. 2019 Huawei National Compiler Design Contest (79/100 in final round) - Team Lead",
         "⚡ I am still active as an alumni from HQU, 2022-Present One of the directors for Huaqiao University Alumni Association in Singapore",
       ],
       website_link: "https://wsc.hqu.edu.cn/info/1137/3899.htm",
@@ -400,32 +400,32 @@ const degrees = {
 const certifications = {
   certifications: [
     {
-      title: "Machine Learning",
-      subtitle: "- Andrew Ng",
-      logo_path: "stanford_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/verify/22MTSSC5WDTM",
-      alt_name: "Stanford University",
-      color_code: "#8C151599",
-    },
-    {
-      title: "Deep Learning",
+      title: "Machine Learning in Production",
       subtitle: "- Andrew Ng",
       logo_path: "deeplearning_ai_logo.png",
       certificate_link:
-        "https://www.coursera.org/account/accomplishments/specialization/H8CPSFXAJD2G",
+        "https://www.coursera.org/account/accomplishments/records/W9P58E5J75F6",
+      alt_name: "deeplearning.ai",
+      color_code: "#8C151599",
+    },
+    {
+      title: "Deep Learning Specialisation",
+      subtitle: "- Andrew Ng",
+      logo_path: "deeplearning_ai_logo.png",
+      certificate_link:
+        "https://www.coursera.org/account/accomplishments/verify/UYUHKBAW8CJD",
       alt_name: "deeplearning.ai",
       color_code: "#00000099",
     },
-    {
-      title: "ML on GCP",
-      subtitle: "- GCP Training",
-      logo_path: "google_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/specialization/EB4VJARK8647",
-      alt_name: "Google",
-      color_code: "#0C9D5899",
-    },
+    // {
+    //   title: "ML on GCP",
+    //   subtitle: "- GCP Training",
+    //   logo_path: "google_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/specialization/EB4VJARK8647",
+    //   alt_name: "Google",
+    //   color_code: "#0C9D5899",
+    // },
     // {
     //   title: "Data Science",
     //   subtitle: "- Alex Aklson",
@@ -471,15 +471,15 @@ const certifications = {
     //   alt_name: "deeplearning.ai",
     //   color_code: "#00000099",
     // },
-    {
-      title: "Fullstack Development",
-      subtitle: "- Jogesh Muppala",
-      logo_path: "coursera_logo.png",
-      certificate_link:
-        "https://www.coursera.org/account/accomplishments/certificate/NRANJA66Y2YA",
-      alt_name: "Coursera",
-      color_code: "#2A73CC",
-    },
+    // {
+    //   title: "Fullstack Development",
+    //   subtitle: "- Jogesh Muppala",
+    //   logo_path: "coursera_logo.png",
+    //   certificate_link:
+    //     "https://www.coursera.org/account/accomplishments/certificate/NRANJA66Y2YA",
+    //   alt_name: "Coursera",
+    //   color_code: "#2A73CC",
+    // },
     // {
     //   title: "Kuberenetes on GCP",
     //   subtitle: "- Qwiklabs",
@@ -490,11 +490,11 @@ const certifications = {
     //   color_code: "#4285F499",
     // },
     {
-      title: "AWS Cloud Practioner",
-      subtitle: "- Qwiklabs",
-      logo_path: "gcp_logo.png",
+      title: "AWS Cloud Practitioner",
+      subtitle: "- AWS Fundamentals (EC2, ELB, ASG, RDS, ElastiCache, S3)",
+      logo_path: "aws_cloud_practitioner_logo.png",
       certificate_link:
-        "https://google.qwiklabs.com/public_profiles/5fab4b2d-be6f-408c-8dcb-6d3b58ecb4a2",
+        "https://www.credly.com/badges/0d23fc4f-2d4d-42ce-af47-1f9253c9f717/public_url",
       alt_name: "AWS",
       color_code: "#4285F499",
     },
