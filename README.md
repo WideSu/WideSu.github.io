@@ -163,6 +163,17 @@ Therefore, this part of portfolio is not customizable. But don't worry we have a
 - Enter the build folder, `git init` and push the generated code to the `master` branch of your new repository on github. That's it. It's Done.
 - You may need to `git init` and force push at every new build.
 
+```bash
+npm run build
+cd build
+git init
+git add .
+git commit -m "XXX"
+git remote add <remote_github_tag> <remote_github_url>
+git branch -M deploy
+git push <remote_github_tag> deploy
+```
+
 **Option 2 (will not work with [user pages](https://docs.github.com/en/github/working-with-github-pages/about-github-pages)):**
 
 - Run `npm run deploy` to build and create a branch called `gh-pages`. It will push the `build` files to that branch.
