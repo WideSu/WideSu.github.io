@@ -377,7 +377,7 @@ const degrees = {
       subtitle: "Master of Science(Financial Engineering)",
       logo_path: "WQU.png",
       alt_name: "SMU",
-      duration: "2021 - 2022",
+      duration: "2024 - 2026",
       descriptions: [
         "⚡ I have taken varity of courses related to Financial Engineering which correspond to derivative pricing, stocastic modeling, portfolio management, risk management etc.\
         ⚡ Apart from this, I have also done projects like Fama French Factor Model Analysis.",

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3031f133.css",
-    "main.js": "/static/js/main.3ca74c86.js",
+    "main.js": "/static/js/main.9d8a2304.js",
     "static/media/portfolio.gif": "/static/media/portfolio.ed6c89f1485f23014ebd.gif",
     "static/media/phaselock_logo.png": "/static/media/phaselock_logo.e06a8331497ace844d96.png",
     "static/media/LinkedIn_Profile_Transparent.png": "/static/media/LinkedIn_Profile_Transparent.c27e5ab63c0ff093eeee.png",
@@ -72,10 +72,10 @@
     "static/media/talksCardBackAlt.svg": "/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
     "main.3031f133.css.map": "/static/css/main.3031f133.css.map",
-    "main.3ca74c86.js.map": "/static/js/main.3ca74c86.js.map"
+    "main.9d8a2304.js.map": "/static/js/main.9d8a2304.js.map"
   },
   "entrypoints": [
     "static/css/main.3031f133.css",
-    "static/js/main.3ca74c86.js"
+    "static/js/main.9d8a2304.js"
   ]
 }
