@@ -9,7 +9,9 @@ const settings = {
 const seo = {
   title: "Anni's Portfolio",
   description:
-    "A research scientist in A*STAR Joint Lab (AI in Healthcare) aspiring to be a data engineer. Experienced in managing data warehouses, full stack software development, explainable machine learning, data engineering, data analytics and managing cloud architectures on AWS.",
+    "I'm Anni HUANG, a C++ engineer in Rockwell Automation.\
+    Experienced in managing data warehouses, full stack software development(Java), \
+    explainable machine learning, data engineering, data analytics and managing cloud architectures on AWS.",
   og: {
     title: "Anni HUANG's Portfolio",
     type: "website",
@@ -23,7 +25,9 @@ const greeting = {
   logo_name: "AnniHuang",
   nickname: "Anni",
   subTitle:
-    "A research scientist in A*STAR Joint Lab (AI in Healthcare) aspiring to be a data engineer. Experienced in managing data warehouses, full stack software development, explainable machine learning, data engineering, data analytics and managing cloud architectures on AWS.",
+  "I'm Anni HUANG, a C++ engineer in Rockwell Automation.\
+  Experienced in managing data warehouses, full stack software development(Java), \
+  explainable machine learning, data engineering, data analytics and managing cloud architectures on AWS.",
   resumeLink:
     "https://drive.google.com/file/d/1rB99OdQYrNfa0NO3z2kouTwCRLClqPUY/view?usp=drive_link",
   portfolio_repository: "https://github.com/WideSu/widesu.github.io",
@@ -369,6 +373,18 @@ const competitiveSites = {
 const degrees = {
   degrees: [
     {
+      title: "WorldQuant University",
+      subtitle: "Master of Science(Financial Engineering)",
+      logo_path: "WQU.png",
+      alt_name: "SMU",
+      duration: "2021 - 2022",
+      descriptions: [
+        "⚡ I have taken varity of courses related to Financial Engineering which correspond to derivative pricing, stocastic modeling, portfolio management, risk management etc.\
+        ⚡ Apart from this, I have also done projects like Fama French Factor Model Analysis.",
+      ],
+      website_link: "https://www.wqu.edu/mscfe",
+    },
+    {
       title: "Singapore Management University",
       subtitle: "Master of IT in Business(Artificial Intelligence Track)",
       logo_path: "smu_logo.png",
@@ -505,8 +521,10 @@ const certifications = {
 const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteership",
-  description:
-    "I have worked with ML and DL Developer, Data Scientist and Software Architect in my internship, master degree, and current research job in A*STAR-SMU Joint Lab.",
+  description:[
+    "I am a C++ engineer at Rockwell Automation(based in SG) compiler and low-level language team.",
+    "Experienced in managing data warehouses, full stack software development(Java), explainable machine learning, data engineering, data analytics and managing cloud architectures on AWS.",
+    "Current tech stack: C++, assembly, LLVM, flex, yacc."],
   header_image_path: "experience.svg",
   sections: [
     {
@@ -514,18 +532,31 @@ const experience = {
       work: true,
       experiences: [
         {
-          title: "Research Scientist",
+          title: "Software Engineer II",
+          company: "Rockwell Automation",
+          company_url: "https://www.rockwellautomation.com/en-sg.html",
+          logo_path: "ROK.png",
+          duration: "Apr 2024 - Present",
+          location: "On site, Singapore",
+          description:[
+            "Worked in compiler and low-level language team to build IDE for the clients of my company.",
+            "Tech stack: C++, assembly, LLVM, flex, yacc."],
+          color: "#0879bf",
+        },
+        {
+          title: "Research Engineer",
           company: "Singapore Management University",
           company_url: "https://site.smu.edu.sg/sajl",
           logo_path: "smu_logo.png",
-          duration: "Sep 2022 - Present",
+          duration: "Sep 2022 - Apr 2024",
           location: "On site, Singapore",
-          description:
-            "I have been working on a AI in Healthcare project with SingHealth. I used AWS to do data ETL, Sklearn, Pandas, Numpy, Joblib, MLflow to conduct machine learning expriements. • Automated alert reminders for sensor technicians to do maintenance by developing a telegram bot on a docker running on an AWS EC2 instance using NGINX Routing Engine, MQTT Broker, PostgreSQL, and Crontab, reduced response time from 1 week to 24 hours.\
-            1) Optimised ETL process using joblib’s parallel processing and vectorisation using NumPy, reduced 80% of data processing time from 10 hours to 2 hours.\
-            2) Design and developed cognitive impairment model of in-home sensor, analysed the crucial changes in living patterns from healthy to cognitive impairment, experimented with different versions of data and models using MLflow, improved F1 score from 0.7 to 0.9 by not updating weights for missing features.\
-            3) Integrated a dashboard developed by a student research assistant with our backend system, reduced 60% of physician’s workload (around 1/3 of the people referred by Hospital has MCI) by highlighting the potential patients with charts showing the changes in their daily activity patterns.\
-            4) Proposed research methodology to extend the research from indoor to outdoor activities with A*STAR, submitted IRB in Jun 23 and got approved in Sep 23.",
+          description:[
+            "I have been working on a AI in Healthcare project with SingHealth. I used AWS to do data ETL, Sklearn, Pandas, Numpy, Joblib, MLflow to conduct machine learning expriements. • Automated alert reminders for sensor technicians to do maintenance by developing a telegram bot on a docker running on an AWS EC2 instance using NGINX Routing Engine, MQTT Broker, PostgreSQL, and Crontab, reduced response time from 1 week to 24 hours.",
+            "1) Published a paper on IEEE CAI 2024 conference which will be hold in June 2024 at MBS.",
+            "2) Optimised ETL process using joblib’s parallel processing and vectorisation using NumPy, reduced 80% of data processing time from 10 hours to 2 hours.",
+            "3) Design and developed cognitive impairment model of in-home sensor, analysed the crucial changes in living patterns from healthy to cognitive impairment, experimented with different versions of data and models using MLflow, improved F1 score from 0.7 to 0.9 by not updating weights for missing features.",
+            "4) Integrated a dashboard developed by a student research assistant with our backend system, reduced 60% of physician’s workload (around 1/3 of the people referred by Hospital has MCI) by highlighting the potential patients with charts showing the changes in their daily activity patterns.",
+            "5) Proposed research methodology to extend the research from indoor to outdoor activities with A*STAR, submitted IRB in Jun 23 and got approved in Sep 23."],
           color: "#0879bf",
         },
       ],
@@ -540,8 +571,11 @@ const experience = {
           logo_path: "ikas_logo.jpeg",
           duration: "Jan 2022 - Jul 2022",
           location: "Hybrid, Singapore",
-          description:
-            "Built predictive maintenance solution for semiconductor companies. Fine tune machine learning models using Optuna. Conducted time series feature engineering using sliding window, analysed important features for each error type using statistic tests and domain knowledge of diamond cutter machines, summarised 15 important features out of 200 features. Improving temperature adjusting algorithms using KNN algorithm to find similar situation in history for reference.",
+          description:[
+            "Built predictive maintenance solution for semiconductor companies.",
+            "Fine tune machine learning models using Optuna. ",
+            "Conducted time series feature engineering using sliding window, analysed important features for each error type using statistic tests and domain knowledge of diamond cutter machines, summarised 15 important features out of 200 features.",
+            "Improving temperature adjusting algorithms using KNN algorithm to find similar situation in history for reference."],
           color: "#000000",
         },
         {
@@ -551,8 +585,11 @@ const experience = {
           logo_path: "phaselock_logo.png",
           duration: "May 2020 - Aug 2020",
           location: "On site, Chengdu City, Sichuan Province, China",
-          description:
-            "I have worked on project of predicting freight rates based on previous data. There were two objectives: (1) To build a forecasting engine to predict daily freight rates. (2) To embed feature in the model which can explain the seasonal major changes in freight rate based on regions and locations. I have closely worked with deep learning models in combination with statistical methods to create solution for this. At the end of internship, I had created model deployed on AWS EC2 with the use of Kafka stream jobs, ElasticSearch and PostgreSQL.",
+          description:[
+            "I have worked on project of predicting freight rates based on previous data. There were two objectives: ",
+            "(1) To build a forecasting engine to predict daily freight rates.",
+            "(2) To embed feature in the model which can explain the seasonal major changes in freight rate based on regions and locations.",
+            "I have closely worked with deep learning models in combination with statistical methods to create solution for this. At the end of internship, I had created model deployed on AWS EC2 with the use of Kafka stream jobs, ElasticSearch and PostgreSQL."],
           color: "#ee3c26",
         },
         {
@@ -563,8 +600,9 @@ const experience = {
           logo_path: "huaqiao_univ_logo.png",
           duration: "Jan 2019 - Jul 2019",
           location: "On site, Xiamen City, Fujian Province, China",
-          description:
-            "I have developed a website for a research project(predictive maintenance) which is used by more than 100 manufactory companies in Xiamen City. I used Java, Spring Boot, BootStrap, MySQL.",
+          description:[
+            "I have developed a website for a research project(predictive maintenance) which is used by more than 100 manufactory companies in Xiamen City.",
+            "I used Java, Spring Boot, BootStrap, MySQL."],
           color: "#0071C5",
         },
       ],
