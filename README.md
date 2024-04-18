@@ -174,6 +174,14 @@ git branch -M deploy
 git push <remote_github_tag> deploy
 ```
 
+Some troubleshoot:
+
+- 1. no node-modules
+```
+npm install --save react react-dom react-scripts
+npm audit fix --force
+```
+
 **Option 2 (will not work with [user pages](https://docs.github.com/en/github/working-with-github-pages/about-github-pages)):**
 
 - Run `npm run deploy` to build and create a branch called `gh-pages`. It will push the `build` files to that branch.
