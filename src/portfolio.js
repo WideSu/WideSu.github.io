@@ -25,7 +25,7 @@ const greeting = {
   logo_name: "AnniHuang",
   nickname: "Anni",
   subTitle:
-  "I'm Anni HUANG, a C++ engineer in Rockwell Automation.\
+    "I'm Anni HUANG, a C++ engineer in Rockwell Automation.\
   Experienced in managing data warehouses, full stack software development(Java), \
   explainable machine learning, data engineering, data analytics and managing cloud architectures on AWS.",
   resumeLink:
@@ -521,10 +521,11 @@ const certifications = {
 const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteership",
-  description:[
+  description: [
     "I am a C++ engineer at Rockwell Automation(based in SG) compiler and low-level language team.",
     "Experienced in managing data warehouses, full stack software development(Java), explainable machine learning, data engineering, data analytics and managing cloud architectures on AWS.",
-    "Current tech stack: C++, assembly, LLVM, flex, yacc."],
+    "Current tech stack: C++, assembly, LLVM, flex, yacc.",
+  ],
   header_image_path: "experience.svg",
   sections: [
     {
@@ -538,9 +539,10 @@ const experience = {
           logo_path: "ROK.png",
           duration: "Apr 2024 - Present",
           location: "On site, Singapore",
-          description:[
-            "Worked in compiler and low-level language team to build IDE for the clients of my company.",
-            "Tech stack: C++, assembly, LLVM, flex, yacc."],
+          description: [
+            "⚡ Worked in compiler and low-level language team to build IDE for the clients of my company.",
+            "⚡ Tech stack: C++, assembly, LLVM, flex, yacc.",
+          ],
           color: "#0879bf",
         },
         {
@@ -550,13 +552,14 @@ const experience = {
           logo_path: "smu_logo.png",
           duration: "Sep 2022 - Apr 2024",
           location: "On site, Singapore",
-          description:[
+          description: [
             "I have been working on a AI in Healthcare project with SingHealth. I used AWS to do data ETL, Sklearn, Pandas, Numpy, Joblib, MLflow to conduct machine learning expriements. • Automated alert reminders for sensor technicians to do maintenance by developing a telegram bot on a docker running on an AWS EC2 instance using NGINX Routing Engine, MQTT Broker, PostgreSQL, and Crontab, reduced response time from 1 week to 24 hours.",
             "1) Published a paper on IEEE CAI 2024 conference which will be hold in June 2024 at MBS.",
             "2) Optimised ETL process using joblib’s parallel processing and vectorisation using NumPy, reduced 80% of data processing time from 10 hours to 2 hours.",
             "3) Design and developed cognitive impairment model of in-home sensor, analysed the crucial changes in living patterns from healthy to cognitive impairment, experimented with different versions of data and models using MLflow, improved F1 score from 0.7 to 0.9 by not updating weights for missing features.",
             "4) Integrated a dashboard developed by a student research assistant with our backend system, reduced 60% of physician’s workload (around 1/3 of the people referred by Hospital has MCI) by highlighting the potential patients with charts showing the changes in their daily activity patterns.",
-            "5) Proposed research methodology to extend the research from indoor to outdoor activities with A*STAR, submitted IRB in Jun 23 and got approved in Sep 23."],
+            "5) Proposed research methodology to extend the research from indoor to outdoor activities with A*STAR, submitted IRB in Jun 23 and got approved in Sep 23.",
+          ],
           color: "#0879bf",
         },
       ],
@@ -571,11 +574,12 @@ const experience = {
           logo_path: "ikas_logo.jpeg",
           duration: "Jan 2022 - Jul 2022",
           location: "Hybrid, Singapore",
-          description:[
+          description: [
             "Built predictive maintenance solution for semiconductor companies.",
             "Fine tune machine learning models using Optuna. ",
             "Conducted time series feature engineering using sliding window, analysed important features for each error type using statistic tests and domain knowledge of diamond cutter machines, summarised 15 important features out of 200 features.",
-            "Improving temperature adjusting algorithms using KNN algorithm to find similar situation in history for reference."],
+            "Improving temperature adjusting algorithms using KNN algorithm to find similar situation in history for reference.",
+          ],
           color: "#000000",
         },
         {
@@ -585,11 +589,12 @@ const experience = {
           logo_path: "phaselock_logo.png",
           duration: "May 2020 - Aug 2020",
           location: "On site, Chengdu City, Sichuan Province, China",
-          description:[
+          description: [
             "I have worked on project of predicting freight rates based on previous data. There were two objectives: ",
             "(1) To build a forecasting engine to predict daily freight rates.",
             "(2) To embed feature in the model which can explain the seasonal major changes in freight rate based on regions and locations.",
-            "I have closely worked with deep learning models in combination with statistical methods to create solution for this. At the end of internship, I had created model deployed on AWS EC2 with the use of Kafka stream jobs, ElasticSearch and PostgreSQL."],
+            "I have closely worked with deep learning models in combination with statistical methods to create solution for this. At the end of internship, I had created model deployed on AWS EC2 with the use of Kafka stream jobs, ElasticSearch and PostgreSQL.",
+          ],
           color: "#ee3c26",
         },
         {
@@ -600,9 +605,10 @@ const experience = {
           logo_path: "huaqiao_univ_logo.png",
           duration: "Jan 2019 - Jul 2019",
           location: "On site, Xiamen City, Fujian Province, China",
-          description:[
+          description: [
             "I have developed a website for a research project(predictive maintenance) which is used by more than 100 manufactory companies in Xiamen City.",
-            "I used Java, Spring Boot, BootStrap, MySQL."],
+            "I used Java, Spring Boot, BootStrap, MySQL.",
+          ],
           color: "#0071C5",
         },
       ],
@@ -706,11 +712,11 @@ const contactPageData = {
     subtitle: "Singapore",
     locality: "Singapore",
     country: "SG",
-    region: "",
-    postalCode: "",
-    streetAddress: "81 Victoria St, Singapore 188065",
+    region: "Jurong West",
+    postalCode: "618494",
+    streetAddress: "2 Corporation Road, #04-05/06, Corporation Place, 618494",
     avatar_image_path: "address_image.svg",
-    location_map_link: "https://maps.app.goo.gl/3xRDtQgJMGRKDjc67",
+    location_map_link: "https://maps.app.goo.gl/M4pSo3ShygQJbqv38",
   },
   phoneSection: {
     title: "Phone",
