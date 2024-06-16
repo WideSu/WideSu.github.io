@@ -29,10 +29,9 @@ const greeting = {
     // eslint-disable-next-line no-multi-str
     "I'm Anni HUANG, a C# engineer in Rockwell Automation.\
     I am working on C# backend for an IDE and language server protocol, and implementing chatbot on RA knowledgebase.\
-    Experienced in software development. \
-  .",
-  resumeLink:
-    "https://drive.google.com/file/d/1rB99OdQYrNfa0NO3z2kouTwCRLClqPUY/view?usp=drive_link",
+    Experienced in software development.",
+  // resumeLink:
+  //   "https://drive.google.com/file/d/1rB99OdQYrNfa0NO3z2kouTwCRLClqPUY/view?usp=drive_link",
   portfolio_repository: "https://github.com/WideSu/widesu.github.io",
   githubProfile: "https://github.com/WideSu",
 };
@@ -512,9 +511,10 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteership",
   description: [
-    "I am a C++ engineer at Rockwell Automation(based in SG) compiler and low-level language team.",
-    "Experienced in managing data warehouses, full stack software development(Java), explainable machine learning, data engineering, data analytics and managing cloud architectures on AWS.",
-    "Current tech stack: C++, assembly, LLVM, flex, yacc.",
+    "I am a C++ engineer at Rockwell Automation(based in SG).",
+    "I am working on C# backend for an IDE and language server protocol.",
+    "Experienced in software development.",
+    "Current tech stack: C#, TypeScript.",
   ],
   header_image_path: "experience.svg",
   sections: [
@@ -531,7 +531,7 @@ const experience = {
           location: "On site, Singapore",
           description: [
             "⚡ Worked in compiler and low-level language team to build IDE for the clients of my company.",
-            "⚡ Tech stack: C++, assembly, LLVM, flex, yacc.",
+            "⚡ Tech stack: C#, TypeScript.",
           ],
           color: "#0879bf",
         },
