@@ -1,5 +1,5 @@
 <h1 align="center"> Anni HUANG's Portfolio 🔥 </h1> 
-<h3 align="center"> My personal portfolio with projects and tech stack <br /> for seeking Data Engineer positions! </h3>
+<h3 align="center"> My personal portfolio </h3>
 
 <p align="center">
   <a href="http://hits.dwyl.com/widesu/widesugithubio"><img alt="HitCounts" src="https://hits.dwyl.com/widesu/widesugithubio.svg" /></a>
