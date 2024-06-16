@@ -9,9 +9,10 @@ const settings = {
 const seo = {
   title: "Anni's Portfolio",
   description:
-    "I'm Anni HUANG, a C++ engineer in Rockwell Automation.\
-    Experienced in managing data warehouses, full stack software development(Java), \
-    explainable machine learning, data engineering, data analytics and managing cloud architectures on AWS.",
+    // eslint-disable-next-line no-multi-str
+    "I'm Anni HUANG, a C# engineer in Rockwell Automation.\
+    I am working on C# backend for an IDE and language server protocol, and implementing chatbot on RA knowledgebase.\
+    Experienced in software development.",
   og: {
     title: "Anni HUANG's Portfolio",
     type: "website",
@@ -25,9 +26,11 @@ const greeting = {
   logo_name: "AnniHuang",
   nickname: "Anni",
   subTitle:
-    "I'm Anni HUANG, a C++ engineer in Rockwell Automation.\
-  Experienced in managing data warehouses, full stack software development(Java), \
-  explainable machine learning, data engineering, data analytics and managing cloud architectures on AWS.",
+    // eslint-disable-next-line no-multi-str
+    "I'm Anni HUANG, a C# engineer in Rockwell Automation.\
+    I am working on C# backend for an IDE and language server protocol, and implementing chatbot on RA knowledgebase.\
+    Experienced in software development. \
+  .",
   resumeLink:
     "https://drive.google.com/file/d/1rB99OdQYrNfa0NO3z2kouTwCRLClqPUY/view?usp=drive_link",
   portfolio_repository: "https://github.com/WideSu/widesu.github.io",
@@ -75,6 +78,12 @@ const socialMediaLinks = [
     fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
     backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
   },
+  {
+    name: "YouTube",
+    link: "https://www.youtube.com/@codecrafter888/",
+    fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/instagram?style=brands
+    backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
+  },
 ];
 
 const skills = {
@@ -83,9 +92,9 @@ const skills = {
       title: "Data Science & AI",
       fileName: "DataScienceImg",
       skills: [
-        "⚡ Developing highly scalable production ready models for various deeplearning and statistical use cases",
-        "⚡ Experience of working with Computer Vision and NLP projects",
-        "⚡ Complex quantitative modelling for dynamic forecasting and time series analysis",
+        "⚡ Developing domain-based LLM using Langchain, Google VertexAI API",
+        "⚡ Experience of designing machine learning pipelines for sensor data",
+        "⚡ Complex quantitative modelling for dynamic forecasting and time series analysis for financial data",
       ],
       softwareSkills: [
         {
@@ -128,9 +137,10 @@ const skills = {
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Building responsive website front end using React-Redux",
-        "⚡ Developing mobile applications using Flutter, React Native and solo android apps using Kotlin",
-        "⚡ Creating application backend in Node, Express & Flask",
+        "⚡ Building responsive website front end using Typescript (Angular framework)",
+        "⚡ Developing backend using C# (ABP.IO framework)",
+        "⚡ Working in agile method",
+        "⚡ GitHub workflow, Unit test",
       ],
       softwareSkills: [
         {
@@ -183,37 +193,16 @@ const skills = {
             color: "#CB3837",
           },
         },
-        {
-          skillName: "Yarn",
-          fontAwesomeClassname: "simple-icons:yarn",
-          style: {
-            color: "#2C8EBB",
-          },
-        },
-        {
-          skillName: "Gatsby",
-          fontAwesomeClassname: "simple-icons:gatsby",
-          style: {
-            color: "#663399",
-          },
-        },
-        {
-          skillName: "Flutter",
-          fontAwesomeClassname: "simple-icons:flutter",
-          style: {
-            color: "#02569B",
-          },
-        },
       ],
     },
     {
       title: "Cloud Infra-Architecture",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Experience working on multiple cloud platforms",
+        "⚡ Experience working on multiple cloud platforms(AWS, Azure, GCP)",
         "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
-        "⚡ Deploying deep learning models on cloud to use on mobile devices",
-        "⚡ Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS",
+        "⚡ Deploying refined LLM on cloud for presale and postsale consultation",
+        "⚡ Setting up MQTT Broker and NGINX routing engine for load balancing, session persistence and certificate authentication ",
       ],
       softwareSkills: [
         {
@@ -379,6 +368,7 @@ const degrees = {
       alt_name: "SMU",
       duration: "2024 - 2026",
       descriptions: [
+        // eslint-disable-next-line no-multi-str
         "⚡ I have taken varity of courses related to Financial Engineering which correspond to derivative pricing, stocastic modeling, portfolio management, risk management etc.\
         ⚡ Apart from this, I have also done projects like Fama French Factor Model Analysis.",
       ],
